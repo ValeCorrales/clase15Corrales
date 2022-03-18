@@ -1,0 +1,10 @@
+@mixin colorYbackgronud($color,$background){
+    color: $color;
+    background-color: $background;
+}
+
+div {
+    @include colorYbackgronud(black, white)
+}
+
+/* tambien se puede hacer sin parametros */

@@ -1,0 +1,23 @@
+//clase base a travez de boton
+
+.boton {
+    width: auto;
+    padding: 10px;
+    height: auto;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(243, 228, 200);
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.botonEnviar {
+    @extend .boton;
+    background-color: pink
+} 
+
+.botonReset {
+    @extend .boton;
+    
+}

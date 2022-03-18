@@ -1,0 +1,14 @@
+@for $padding from 1 through 5 { /* aca estamos creando la clase .col-1 hasta .col-5 */
+    .col-#{$padding}{
+        padding: 5px * $padding;
+    }
+}
+
+/* en vez de numeros tambien se pueden usar valores, ejemplo colores (en una lista) */
+
+@each $color in black, pink, violet {
+    .font-#{$color}{
+        color:#{$color};
+        background-color: transparent;
+    }
+} 
