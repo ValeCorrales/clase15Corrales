@@ -3,8 +3,8 @@
     background-color: $background;
 }
 
-div {
-    @include colorYbackgronud(black, white)
+footer {
+    @include colorYbackgronud(black, pink)
 }
 
 /* tambien se puede hacer sin parametros */
