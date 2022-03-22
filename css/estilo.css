@@ -57,9 +57,14 @@ h1, a {
   width: 70px; }
 
 .navbar-light .navbar-nav .active > .nav-link {
-  color: pink; }
+  font-weight: bold; }
 
-/*  */
+.navbar-light .navbar-nav .active > .nav-link:hover {
+  color: white; }
+
+header {
+  padding-bottom: 20px; }
+
 footer {
   margin-top: 20px;
   padding-top: 30px;
@@ -82,7 +87,9 @@ header {
   body h1 {
     font-size: 25px; }
   body h3 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  body h4 {
+    font-size: 10px; } }
 
 /* aca estamos creando la clase .col-1 hasta .col-5 */
 .col-1 {
@@ -149,5 +156,9 @@ div {
 footer {
   color: black;
   background-color: pink; }
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+  color: black !important;
+  background-color: pink !important; }
 
 /* tambien se puede hacer sin parametros */

@@ -7,4 +7,10 @@ footer {
     @include colorYbackgronud(black, pink)
 }
 
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    @include colorYbackgronud(black !important, pink !important)
+}
+
+
+
 /* tambien se puede hacer sin parametros */
