@@ -4,11 +4,11 @@
 }
 
 footer {
-    @include colorYbackgronud(black, pink)
+    @include colorYbackgronud(black, $colorprimario)
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-light {
-    @include colorYbackgronud(black !important, pink !important)
+    @include colorYbackgronud(black !important, $colorprimario !important)
 }
 
 

@@ -8,6 +8,9 @@
     <meta name="description" content="Magus postres! Te contamos un poco de nosotras y de como surgio este mundo de tortas y muucho dulce! :)">
     <title>Sobre nosotras</title>
 
+    <!-- AOS SCROLL -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- cdn (SIN DESCARGAR) css de boostrap (antes de mi estilo.css) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     
@@ -29,10 +32,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav">
                         <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
                           <a class="nav-link" href="productos.html">Productos <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Sobre nosotras <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="sobreNosotras.html">Sobre nosotras <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="recetas.html">Recetas <span class="sr-only">(current)</span></a>
@@ -55,7 +61,7 @@
 
             <div class="row">
                 <div class="col-lg-12 col-12">
-                    <img src="../assets/img/rogelTop.png" alt="" class="img-fluid">
+                    <img src="../assets/img/nosotrasRogel.png" alt="" class="img-fluid">
                 </div>
 
             </div>
@@ -70,33 +76,75 @@
 
             <div class="row">
 
-                <div class="col-lg-6 col-12">
+                <div class="col-lg-5 col-12 pNosotras">
 
                     <p> 
             
-                        Dos hermanas apasionadas por la cocina. Siempre nos gusto cocinar para nuestra familia, y hace unos anios que tambien lo hacemos para 
+                        <b class="fontSpecial"> Dos hermanas apasionadas por la cocina!</b> <br> <br>
+                        Siempre nos gusto cocinar para nuestra familia, y hace unos años que tambien lo hacemos para 
                         nuestros clientes!! <br> <br>
                         
                         Continuamente se suman clientes nuevos, pero tambien se mantienen los clientes mas fieles que nos eligen una y otra vez!
                         
                         <br> <br>
                          
-                        Cocinamos con mucho amor todos nuestros productos!
+                        <b> Cocinamos con mucho amor</b> todos nuestros productos!
                         
-                        Si aun no los probaste no esperes mas!! No te vas a arrepentir :) 
+                        <u> Si aun no los probaste no esperes mas!!</u> No te vas a arrepentir :) 
                         <br><br>
-                        Apreta <a href="contacto.html"> AQUI </a> para hacer tu pedido ya mismo!!
+                        Apreta <a href="contacto.html"> <b class="fontSpecial"> AQUI </b></a> para hacer tu pedido ya mismo!!
                     </p>
                 </div>
 
-                <div class="col-lg-6 col-12">
+            
 
-                    <img src="../assets/img/nosotras.png" alt="" class="img-fluid">
+                <div class="col-lg-7 col-12">
+
+                    <img src="../assets/img/nosotras.jpeg" alt="" class="img-fluid"> <!-- data-aos="fade-left" data-aos-duration="1000" -->
+                </div>
+
+            </div>
+
+                <div class="row">
+
+                    <div class="col-lg-12 col-12">
+                        <h3>Estos son los dias que mas pedidos recibimos, nosotras le llamamos "maratones"!!</h3>
+                    </div>
+
+
                 </div>
 
 
-
-            </div>
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col mb-4">
+                      <div class="card h-100" data-aos="flip-left" data-aos-duration="2000">
+                        <img src="../assets/img/nosotroasDiaMadre.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Dia de la madre</h5>
+                          <p class="card-text"> Esta es la maraton mas grande, nos piden muuchos desayunos o cajitas especiales para la ocasion!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4">
+                      <div class="card h-100" data-aos="flip-up" data-aos-duration="2000">
+                        <img src="../assets/img/nosotrasNavidad.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Navidad</h5>
+                          <p class="card-text">En navidad nos piden muchos budines, el mas pedido es el de chips de chocolate!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mb-4">
+                      <div class="card h-100" data-aos="flip-right" data-aos-duration="2000">
+                        <img src="../assets/img/nosotrasFinAnio.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Fin de año</h5>
+                          <p class="card-text">Las tortas son el producto estrella para esta ocasion, en especial el brownie y la rogel con extra dulce de leche!!</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
 
            
 
@@ -106,26 +154,37 @@
         <footer class="container-fluid">
             <div class="row">
 
-                <div class="col-lg-4 col-12 redes">
-                    <h3>        
-                        <img src="../assets/img/fbLogo.png" alt="" class="img-fluid">
-                    </h3>
-                </div>
-                
-                <div class="col-lg-4 col-12 redes">
-
-                    <h3> 
-                    
-                    <a href="https://www.instagram.com/magus_postres/" target="_blank" class="enlaceRedes">
-                        <img src="../assets/img/instagramLogo.png" alt="" class="img-fluid">
+                <div class="col-lg-4 col-4 footerLogo">
+                    <a href="../index.html">
+                        <img src="../assets/img/logo.jpg" alt="" class="imgLogo">
                     </a>
-                    </h3>
+                    <p>Copyright © 2022 Magus Postres. 
+                        <br>
+                        All Rights Reserved.
+                    </p>
                 </div>
 
-                <div class="col-lg-4 col-12 redes">
-                    <h3>        
-                        <img src="../assets/img/wappLogo.png" alt="" class="img-fluid">
-                    </h3>
+                <div class="col-lg-4 col-4 center">
+                    <h6>Navegacion:</h6>
+                    <ul class="ulCenter">
+                    <li><a href="../index.html" class="navFooter">Inicio</a></li>
+                    <li><a href="productos.html" class="navFooter">Productos</a></li>
+                    <li><a href="sobreNosotras.html" class="navFooter">Sobre nosotras</a></li>
+                    <li><a href="recetas.html" class="navFooter">Recetas</a></li>
+                    <li><a href="contacto.html" class="navFooter">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-4 redes">   
+                    <h6>Contactanos:</h6>
+                    <img src="../assets/img/icons8-facebook.svg" alt="" class="imgRedes img-fluid">
+                    
+                    <a href="https://www.instagram.com/magus_postres/" target="_blank" class="">
+                        <img src="../assets/img/icons8-instagram.svg" alt="" class="imgRedes img-fluid">
+                    </a>
+    
+                    <img src="../assets/img/icons8-whatsapp.svg" alt="" class="imgRedes img-fluid">
+
                 </div>
 
             </div>
@@ -135,5 +194,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     
+    <!-- AOS SCROLL -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+
 </body>
 </html>

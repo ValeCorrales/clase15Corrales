@@ -1,9 +1,5 @@
-h1 {
-  margin-top: 20px;
-  padding-top: 30px; }
-
-.mainSection {
-  padding-top: 20px; }
+.row {
+  margin-bottom: 40px; }
 
 input {
   width: 200px;
@@ -50,6 +46,29 @@ h1, a {
 .botonCenter {
   text-align: center; }
 
+.imagenInicio {
+  width: 800px; }
+
+.icon {
+  width: 20px; }
+
+.pIndex {
+  background-color: pink; }
+
+.row.presentacionIndex {
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px; }
+  .row.presentacionIndex h1 {
+    color: black; }
+
+.pNosotras {
+  display: flex;
+  align-items: center; }
+
+.fontSpecial {
+  font-size: 25px; }
+
 .collapse.navbar-collapse {
   justify-content: flex-end; }
 
@@ -65,17 +84,31 @@ h1, a {
 header {
   padding-bottom: 20px; }
 
-footer {
-  margin-top: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: aqua; }
-  footer .redes {
-    text-align: center; }
-  footer img {
-    width: 60px; }
-  footer .enlaceRedes:hover {
-    color: #f39df3; }
+footer li {
+  list-style-type: none;
+  justify-content: center; }
+
+footer div.center {
+  text-align: center; }
+
+footer a.navFooter {
+  color: black; }
+
+footer a.navFooter:hover {
+  color: white; }
+
+footer .imgLogo {
+  width: 60px; }
+
+footer .imgRedes {
+  width: 45px; }
+
+footer .row {
+  margin-bottom: 0px;
+  margin-top: 70px; }
+
+footer .ulCenter {
+  padding-left: 0; }
 
 header {
   width: 50%; }
@@ -89,6 +122,8 @@ header {
   body h3 {
     font-size: 20px; }
   body h4 {
+    font-size: 10px; }
+  body .navFooter, body footer p, body h6 {
     font-size: 10px; } }
 
 /* aca estamos creando la clase .col-1 hasta .col-5 */
@@ -162,3 +197,83 @@ footer {
   background-color: pink !important; }
 
 /* tambien se puede hacer sin parametros */
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; }
+
+.headerNativo {
+  background-color: pink;
+  width: auto; }
+
+.navNativo {
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.logo {
+  justify-content: flex-start; }
+
+.aNativo {
+  color: black;
+  text-decoration: none; }
+
+.aNativo.bold {
+  font-weight: bold; }
+
+.aNativo:hover {
+  color: white;
+  text-decoration: underline; }
+
+.liNativo {
+  padding: 10px;
+  list-style-type: none;
+  display: inline; }
+
+h6 {
+  font-size: 1rem; }
+
+.ulNativo {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap; }
+
+@media only screen and (max-width: 768px) {
+  .contenedorPadre {
+    display: grid;
+    grid-template-areas: "header"   "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto; }
+  header {
+    grid-area: header; }
+  main {
+    grid-area: main; }
+  footer {
+    grid-area: footer; }
+  .imgReceta {
+    width: 100%;
+    height: auto; } }
+
+/* MEDIA QUERIE DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .contenedorPadre {
+    display: grid;
+    grid-template-areas: "navLogo"   "navDer" "tituloReceta" "recetaUno" "recetaDos" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto; }
+  .logo {
+    grid-area: navLogo;
+    display: grid;
+    justify-content: left; }
+  .navDer {
+    grid-area: navDer; }
+  .tituloReceta {
+    grid-area: tituloReceta; }
+  .recetaUno {
+    grid-area: recetaUno; }
+  .recetaDos {
+    grid-area: recetaDos; }
+  footer {
+    grid-area: footer; }
+  .imgReceta {
+    width: 25%;
+    height: auto; } }

@@ -1,20 +1,42 @@
 footer {
-    margin-top: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: aqua;
-    
-        .redes {
-        text-align: center;
+
+
+        li {
+            list-style-type: none;
+            justify-content: center;
         }
 
-        img {
+        div.center {
+            text-align: center;
+        }
+        
+        a.navFooter {
+            color: black;
+        }
+
+        a.navFooter:hover {
+            color: white;
+        }
+    
+        .imgLogo{
             width: 60px;
         }
-            .enlaceRedes:hover {
-            color: rgb(243, 157, 243);
-            }
+
+        .imgRedes {
+            width: 45px;
+        }
+
+        .row{
+            margin-bottom: 0px;
+            margin-top: 70px;
+        }
+
+        .ulCenter {
+            padding-left:0;
+        }
+        
 }
+
 
 
 

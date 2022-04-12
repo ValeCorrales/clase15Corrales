@@ -1,0 +1,129 @@
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+}
+
+.headerNativo{
+    background-color: pink;
+    width: auto;
+}
+
+.navNativo{
+    background-color: pink; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.logo{
+    justify-content: flex-start;
+}
+
+.aNativo{
+    color: black;
+    text-decoration: none;
+}
+
+.aNativo.bold{
+    font-weight: bold;
+}
+
+.aNativo:hover{
+    color: white;
+    text-decoration:underline;
+}
+
+.liNativo{
+    padding: 10px;
+    list-style-type: none;
+    display: inline;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.ulNativo {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contenedorPadre{
+        display: grid;
+        grid-template-areas:
+        "header"  
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    .imgReceta{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* MEDIA QUERIE DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+
+    .contenedorPadre{
+        display: grid;
+        grid-template-areas:
+        "navLogo"  
+        "navDer"
+        "tituloReceta"
+        "recetaUno"
+        "recetaDos"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto;
+
+    }
+
+    .logo{
+        grid-area: navLogo;
+        display: grid;
+        justify-content: left;
+    }
+    .navDer{
+        grid-area: navDer;
+
+    }
+
+    .tituloReceta{
+        grid-area: tituloReceta;
+    }
+    .recetaUno {
+        grid-area: recetaUno;
+    }
+
+    .recetaDos {
+        grid-area: recetaDos;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    .imgReceta{
+        width: 25%;
+        height: auto;
+    }    
+}
